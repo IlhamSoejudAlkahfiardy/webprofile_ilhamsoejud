@@ -1,0 +1,260 @@
+:root {
+    --primary: #793FDF;
+    --secondary: #7091F5;
+    --acsent: #97FFF4;
+    --second-acsent: #FFFD8C;
+    --white: #F7F7F7;
+    --black: #1A1A1A;
+    --green: #35A29F;
+    --pink: #F11A7B;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+}
+
+.back-button{
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    transition: background-color .3s linear;
+}
+
+.back-button p{
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.back-button p::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.back-button:hover{
+    background-color: var(--black);
+    color: var(--white);
+    cursor: crosshair;
+}
+
+.main-element{
+    height: 100vh;
+    width: 98.1%;
+    margin: auto;
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-element .title{
+    height: 47%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-element .title p{
+    
+    transition: letter-spacing .3s ease;
+}
+
+.main-element .title .icon{
+    /* display: none; */
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.main-element .title p:hover{
+    letter-spacing: 20px;
+    cursor: crosshair;
+}
+
+.main-element .title p:hover ~ .icon{
+    opacity: 1;
+}
+
+.main-element .title p::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .title p{
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.main-element .main-content{
+    width: 100%;
+    height: 50%;
+}
+
+.main-element .main-content .sosmed{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main-element .main-content .sosmed .instagram{
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-element .main-content .sosmed .instagram i{
+    margin-right: 25px;
+}
+
+.main-element .main-content .sosmed .instagram p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--black);
+    width: 0px;
+    overflow: hidden;
+    transition: width .3s ease;
+}
+
+.main-element .main-content .sosmed .instagram:hover p{
+    width: 100%;
+}
+
+.main-element .main-content .sosmed .linkedin{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+.main-element .main-content .sosmed .linkedin i{
+    margin-right: 25px;
+}
+
+.main-element .main-content .sosmed .linkedin p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--black);
+    width: 0px;
+    overflow: hidden;
+    transition: width .3s ease;
+}
+
+.main-element .main-content .sosmed .linkedin:hover p{
+    width: 100%;
+}
+
+.main-element .main-content .sosmed .github{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+.main-element .main-content .sosmed .github i{
+    margin-right: 25px;
+}
+
+.main-element .main-content .sosmed .github p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--black);
+    width: 0px;
+    overflow: hidden;
+    transition: width .3s ease;
+}
+
+.main-element .main-content .sosmed .github:hover p{
+    width: 100%;
+}
+
+.main-element .main-content .sosmed .gitlab{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+.main-element .main-content .sosmed .gitlab i{
+    margin-right: 25px;
+}
+
+.main-element .main-content .sosmed .gitlab p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--black);
+    width: 0px;
+    overflow: hidden;
+    transition: width .3s ease;
+}
+
+.main-element .main-content .sosmed .gitlab:hover p{
+    width: 100%;
+}
+
+.main-element .main-content .sosmed .whatsapp{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+
+.main-element .main-content .sosmed .whatsapp i{
+    margin-right: 25px;
+}
+
+.main-element .main-content .sosmed .whatsapp p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--black);
+    width: 0px;
+    overflow: hidden;
+    transition: width .3s ease;
+}
+
+.main-element .main-content .sosmed .whatsapp:hover p{
+    width: 100%;
+}
+
+.main-element .main-content .sosmed .instagram:hover{
+    cursor: crosshair;
+}
+.main-element .main-content .sosmed .linkedin:hover{
+    cursor: crosshair;
+}
+.main-element .main-content .sosmed .github:hover{
+    cursor: crosshair;
+}
+.main-element .main-content .sosmed .gitlab:hover{
+    cursor: crosshair;
+}
+.main-element .main-content .sosmed .whatsapp:hover{
+    cursor: crosshair;
+}

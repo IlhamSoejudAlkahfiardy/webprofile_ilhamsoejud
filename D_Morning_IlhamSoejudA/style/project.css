@@ -1,0 +1,396 @@
+:root {
+    --primary: #793FDF;
+    --secondary: #7091F5;
+    --acsent: #97FFF4;
+    --second-acsent: #FFFD8C;
+    --white: #F7F7F7;
+    --black: #1A1A1A;
+    --green: #35A29F;
+    --pink: #F11A7B;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'Trispace', sans-serif; */
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-element{
+    height: 100%;
+    width: 98.1%;
+    background-color: var(--white);
+
+    display: flex;
+}
+
+.main-element .back-button{
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s linear;
+}
+
+.main-element .back-button p{
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: var(--black);
+}
+
+.main-element .back-button p::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.main-element .back-button:hover{
+    background-color: var(--black);
+    cursor: crosshair;
+}
+
+.main-element .back-button:hover p{
+    color: var(--white);
+}
+
+.main-element .main-content{
+    height: fit-content;
+    width: 85%;
+    padding-left: 15%;
+    /* background-color: red; */
+}
+
+/* Project 1 */
+
+.main-element .main-content .project-1{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.main-element .main-content .project-1 .project-data{
+    /* background-color: blue; */
+    height: fit-content;
+    width: 75%;
+}
+
+.main-element .main-content .project-1 .project-data .banner{
+    height: 50%;
+    padding: 25px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-1 .project-data .banner img{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-1 .project-data .desc{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 25px 100px 25px 100px;
+}
+
+.main-element .main-content .project-1 .project-data .desc .title{
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.main-element .main-content .project-1 .project-data .desc .paragraph{
+    font-size:25px;
+    letter-spacing: 2px;
+}
+
+.main-element .main-content .project-1 .stack{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+
+.main-element .main-content .project-1 .stack p{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Project 1 */
+
+/* Project 2 */
+
+.main-element .main-content .project-2{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.main-element .main-content .project-2 .project-data{
+    /* background-color: blue; */
+    height: fit-content;
+    width: 75%;
+}
+
+.main-element .main-content .project-2 .project-data .banner{
+    height: 50%;
+    padding: 25px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-2 .project-data .banner img{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-2 .project-data .desc{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 25px 100px 25px 100px;
+}
+
+.main-element .main-content .project-2 .project-data .desc .title{
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.main-element .main-content .project-2 .project-data .desc .paragraph{
+    font-size:25px;
+    letter-spacing: 2px;
+}
+
+.main-element .main-content .project-2 .stack{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+
+.main-element .main-content .project-2 .stack p{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Project 2 */
+
+/* Project 3 */
+
+.main-element .main-content .project-3{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.main-element .main-content .project-3 .project-data{
+    /* background-color: blue; */
+    height: fit-content;
+    width: 75%;
+}
+
+.main-element .main-content .project-3 .project-data .banner{
+    height: 50%;
+    padding: 25px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-3 .project-data .banner img{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-3 .project-data .desc{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 25px 100px 25px 100px;
+}
+
+.main-element .main-content .project-3 .project-data .desc .title{
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.main-element .main-content .project-3 .project-data .desc .paragraph{
+    font-size:25px;
+    letter-spacing: 2px;
+}
+
+.main-element .main-content .project-3 .stack{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+
+.main-element .main-content .project-3 .stack p{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Project 3 */
+
+/* Project 4 */
+
+.main-element .main-content .project-4{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.main-element .main-content .project-4 .project-data{
+    /* background-color: blue; */
+    height: fit-content;
+    width: 75%;
+}
+
+.main-element .main-content .project-4 .project-data .banner{
+    height: 50%;
+    padding: 25px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-4 .project-data .banner img{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-4 .project-data .desc{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 25px 100px 25px 100px;
+}
+
+.main-element .main-content .project-4 .project-data .desc .title{
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.main-element .main-content .project-4 .project-data .desc .paragraph{
+    font-size:25px;
+    letter-spacing: 2px;
+}
+
+.main-element .main-content .project-4 .stack{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+
+.main-element .main-content .project-4 .stack p{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Project 4 */
+
+/* Project 5 */
+
+.main-element .main-content .project-5{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.main-element .main-content .project-5 .project-data{
+    /* background-color: blue; */
+    height: fit-content;
+    width: 75%;
+}
+
+.main-element .main-content .project-5 .project-data .banner{
+    height: 50%;
+    padding: 25px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-5 .project-data .banner img{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.main-element .main-content .project-5 .project-data .desc{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 25px 100px 25px 100px;
+}
+
+.main-element .main-content .project-5 .project-data .desc .title{
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.main-element .main-content .project-5 .project-data .desc .paragraph{
+    font-size:25px;
+    letter-spacing: 2px;
+}
+
+.main-element .main-content .project-5 .stack{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+
+.main-element .main-content .project-5 .stack p{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Project 5 */
+
+.selection::selection{
+    background-color: var(--black);
+    color: var(--white);
+}

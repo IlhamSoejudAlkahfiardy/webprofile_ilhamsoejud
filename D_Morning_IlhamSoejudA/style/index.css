@@ -1,0 +1,253 @@
+:root {
+    --primary: #793FDF;
+    --secondary: #7091F5;
+    --acsent: #97FFF4;
+    --second-acsent: #FFFD8C;
+    --white: #F7F7F7;
+    --black: #1A1A1A;
+    --green: #35A29F;
+    --pink: #F11A7B;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.main-element{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#page-1{
+    height: 49.9%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    margin: 2px;
+    transition: background-color .5s ease-in-out;
+}
+
+#page-1:hover{
+    background-color: var(--primary);
+    cursor: crosshair;
+}
+
+#page-1 .title-element{
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+#page-1 .title-element a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+#page-1 .title-element::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#page-2{
+    height: 49.9%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    margin: 2px;
+    transition: background-color .5s ease-in-out;
+}
+
+#page-2:hover{
+    background-color: var(--secondary);
+    cursor: crosshair;
+}
+
+#page-2 .title-element{
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+#page-2 .title-element::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#page-3{
+    height: 49.9%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    margin: 2px;
+    transition: background-color .5s ease-in-out;
+}
+
+#page-3:hover{
+    background-color: var(--acsent);
+    cursor: crosshair;
+}
+
+#page-3 .title-element{
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+#page-3 .title-element::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#page-4{
+    height: 49.9%;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    margin: 2px;
+    transition: background-color .5s ease-in-out;
+}
+
+#page-4:hover{
+    background-color: var(--second-acsent);
+    cursor: crosshair;
+}
+
+#page-4 .title-element{
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+#page-4 .title-element::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#center-element{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    width: 40%;
+    height:40%;
+    border: solid 3px var(--black);
+    transition: background-color .5s ease-in-out;
+    
+}
+
+#center-element:hover{
+    background-color: var(--black);
+    cursor: crosshair;
+}
+
+#center-element:hover .title-1{
+    color: var(--black);
+}
+
+#center-element:hover .author{
+    color: var(--white);
+}
+
+#center-element .content-1 .title-1{
+    position: relative;
+    font-family: 'Arial';
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    transition: color .5s ease-in-out;
+    color: var(--white);
+    -webkit-text-stroke: 1px var(--white);
+}
+
+#center-element .content-1 .title-1::before{
+    position: absolute;
+    width: 10%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    content: attr(data-text);
+    color: var(--black);
+    -webkit-text-stroke: 1px var(--white);
+    border-right: 3px solid var(--black);
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+#center-element .content-1 .title-1::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#center-element .content-1 .author{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    letter-spacing: 3px;
+    transition: color .5s ease-in-out;
+}
+
+#center-element .content-1 .author::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 98.2%;
+    background-color: var(--white);
+    margin: auto;
+    border-top: solid 3px var(--black);
+    transition: background-color .5s ease-in-out;
+}
+
+#contact-me:hover>#get-in-touch{
+    display: block;
+}
+
+#contact-me:hover{
+    cursor: crosshair;
+    background-color: var(--pink);
+}
+
+#contact-me .title-1{
+    letter-spacing: 15px;
+    font-size: 50px;
+}
+
+#contact-me .title-1::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+

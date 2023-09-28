@@ -1,0 +1,287 @@
+:root {
+    --primary: #793FDF;
+    --secondary: #7091F5;
+    --acsent: #97FFF4;
+    --second-acsent: #FFFD8C;
+    --white: #F7F7F7;
+    --black: #1A1A1A;
+    --green: #35A29F;
+    --pink: #F11A7B;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+}
+
+.back-button{
+    width: 15%;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s linear;
+}
+
+.back-button p{
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.back-button p::selection{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.back-button:hover{
+    background-color: var(--black);
+    color: var(--white);
+    cursor: crosshair;
+}
+
+.main-element {
+    width: 85%;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;;
+}
+
+.main-element .internship-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url('../img/mejakita.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    transition: background-color .3s ease;
+    
+}
+
+.main-element .internship-1:hover{
+    background-image: none;
+    background-color: var(--white);
+    color: var(--black);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    cursor: crosshair;
+}
+
+.main-element .internship-1:hover > .main-info .title #title-internship-1{
+    display: block;
+}
+
+.main-element .internship-1:hover > .main-info .info p{
+    display: block;
+}
+
+.main-element .internship-1:hover > .sertif p{
+    display: block;
+}
+
+.main-element .internship-1 .main-info{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.main-element .internship-1 .main-info .title{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-element .internship-1 .main-info .title p{
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: auto;
+
+
+
+
+
+    display: none;
+
+
+
+
+
+}
+
+.main-element .internship-1 .main-info .info{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 230px;
+    padding-right: 230px;
+}
+
+.main-element .internship-1 .main-info .info p{
+    font-size: 30px;
+    letter-spacing: 5px;
+
+
+
+
+    display: none;
+
+
+
+
+
+}
+
+.main-element .internship-1 .sertif{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.main-element .internship-1 .sertif p{
+    font-size: 30px;
+    letter-spacing: 5px;
+
+
+
+
+    display: none;
+
+
+
+
+
+}
+
+
+
+.main-element .internship-2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url('../img/kemensetneg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+    transition: width .3s ease;
+}
+
+.main-element .internship-2:hover{
+    background-image: none;
+    background-color: var(--white);
+    color: var(--black);
+    filter: blur(0px);
+  -webkit-filter: blur(0px);
+  cursor: crosshair;
+}
+
+.main-element .internship-2:hover > .main-info .title #title-internship-1{
+    display: block;
+}
+
+.main-element .internship-2:hover > .main-info .info p{
+    display: block;
+}
+
+.main-element .internship-2:hover > .sertif p{
+    display: block;
+}
+
+.main-element .internship-2 .main-info{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.main-element .internship-2 .main-info .title{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-element .internship-2 .main-info .title p{
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: auto;
+
+
+
+
+
+    display: none;
+
+
+
+
+
+}
+
+.main-element .internship-2 .main-info .info{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 230px;
+    padding-right: 230px;
+}
+
+.main-element .internship-2 .main-info .info p{
+    font-size: 30px;
+    letter-spacing: 5px;
+
+
+
+
+    display: none;
+
+
+
+
+
+}
+
+.main-element .internship-2 .sertif{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.main-element .internship-2 .sertif p{
+    font-size: 30px;
+    letter-spacing: 5px;
+
+
+
+
+    display: none;
+
+
+
+
+
+}
+
+.selection::selection{
+    background-color: var(--black);
+    color: var(--white);
+}

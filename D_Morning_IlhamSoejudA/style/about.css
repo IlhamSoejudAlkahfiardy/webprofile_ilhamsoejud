@@ -1,0 +1,115 @@
+:root {
+    --primary: #793FDF;
+    --secondary: #7091F5;
+    --acsent: #97FFF4;
+    --second-acsent: #FFFD8C;
+    --white: #F7F7F7;
+    --black: #1A1A1A;
+    --green: #35A29F;
+    --pink: #F11A7B;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-element{
+    height: 99vh;
+    width: 98.1%;
+    margin: auto;
+    margin-top: 1vh;
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    overflow: hidden;
+}
+
+.main-element .back-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    transition: background-color .3s linear;
+}
+
+.main-element .back-button:hover{
+    background-color: var(--black);
+    cursor: crosshair;
+}
+
+.main-element .back-button:hover p{
+    color: var(--white);
+}
+
+.main-element .back-button p{    
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: var(--black);
+}
+
+.main-element .back-button p::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.main-element .main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-element .main-content .paragraph{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    width: 40%;
+    margin-left: 150px;
+}
+
+.main-element .main-content .paragraph p{
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    text-indent: 80px;
+}
+
+.main-element .main-content .paragraph p::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .main-content .paragraph p span::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.main-element .main-content .img-profile{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-element .main-content .img-profile img{
+    filter: grayscale(100%);
+}
+

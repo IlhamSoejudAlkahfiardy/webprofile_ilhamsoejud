@@ -1,0 +1,262 @@
+:root {
+    --primary: #793FDF;
+    --secondary: #7091F5;
+    --acsent: #97FFF4;
+    --second-acsent: #FFFD8C;
+    --white: #F7F7F7;
+    --black: #1A1A1A;
+    --green: #35A29F;
+    --pink: #F11A7B;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-element{
+    height: 99vh;
+    width: 98.1%;
+    margin-top: 1vh;
+    background-color: var(--white);
+
+    display: flex;
+}
+
+.main-element .back-button{
+    width: 15%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s linear;
+}
+
+.main-element .back-button p{
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: var(--black);
+}
+
+.main-element .back-button p::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.main-element .back-button:hover{
+    background-color: var(--black);
+    cursor: crosshair;
+}
+
+.main-element .back-button:hover p{
+    color: var(--white);
+}
+
+.main-element .main-content{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-element .main-content .edu-1{
+    height: 25%;
+    width: 85%;
+    border: solid 2px var(--black);
+   
+    display: flex;
+    justify-content: space-between;
+    transition: background-color .3s linear;
+}
+
+.main-element .main-content .edu-1:hover{
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+.main-element .main-content .edu-1:hover .data .school{
+    color: var(--white);
+}
+
+.main-element .main-content .edu-1:hover .data .bottom .jurusan{
+    color: var(--white);
+}
+
+.main-element .main-content .edu-1:hover .data .bottom span{
+    color: var(--white);
+}
+
+.main-element .main-content .edu-1 .data{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-element .main-content .edu-1 .data .school{
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: var(--black);
+}
+
+.main-element .main-content .edu-1 .data .school::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .main-content .edu-1 .data .jurusan{
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: var(--black);
+}
+
+.main-element .main-content .edu-1 .data .jurusan::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .main-content .edu-1 .data .bottom span::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .main-content .edu-1 .logo{
+    margin-right: 20px;
+}
+
+.main-element .main-content .edu-2{
+    height: 25%;
+    width: 85%;
+    border: solid 2px var(--black);
+
+    display: flex;
+    justify-content: space-between;
+    transition: background-color .3s linear;
+}
+
+.main-element .main-content .edu-2:hover{
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+.main-element .main-content .edu-2:hover .data .school{
+    color: var(--white);
+}
+
+.main-element .main-content .edu-2:hover .data .bottom .jurusan{
+    color: var(--white);
+}
+
+.main-element .main-content .edu-2:hover .data .bottom span{
+    color: var(--white);
+}
+
+.main-element .main-content .edu-2 .data{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-element .main-content .edu-2 .data .school{
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: var(--black);
+}
+
+.main-element .main-content .edu-2 .data .school::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .main-content .edu-2 .data .jurusan{
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: var(--black);
+}
+
+.main-element .main-content .edu-2 .data .jurusan::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .main-content .edu-2 .data .bottom span::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.main-element .main-content .edu-2 .logo{
+    margin-right: 20px;
+}
+
+.main-element .map-edu{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: background-color .3s linear;
+}
+
+.main-element .map-edu .map-1{
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.main-element .map-edu .map-1 p{
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: var(--black);
+}
+
+.main-element .map-edu .map-1 p::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.main-element .map-edu .map-2{
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.main-element .map-edu .map-2 p{
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: var(--black);
+}
+
+.main-element .map-edu .map-2 p::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.main-element .map-edu:hover{
+    background-color: var(--black);
+    cursor: crosshair;
+}
+
+.main-element .map-edu:hover .map-1 p{
+    color: var(--white);
+}
+
+.main-element .map-edu:hover .map-2 p{
+    color: var(--white);
+}
